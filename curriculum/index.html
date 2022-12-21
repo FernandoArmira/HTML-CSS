@@ -15,6 +15,8 @@
     />
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="skills.css">
     <script defer src="app.js"></script>
 </head>
 <body>
@@ -24,7 +26,7 @@
                 <img height="50" width="50" src="https://media.istockphoto.com/id/1158342659/vector/bear-head-mascot-vector-for-emblem-design-with-color-grey.jpg?s=612x612&w=0&k=20&c=52_wgeMA5A5mS4JGuddIcnMzw7G9IRCnAalKC-jlNJY=" alt="bear">
                 <div>
                     Fernando Armira <br>
-                    {bear}
+                    Desarrollador
                 </div>
             </a>
             <button class="open-menu" aria-label="Abrir menu">
@@ -42,5 +44,40 @@
             
         </nav>
     </header>
+
+    <div class="horizontal-padding vertical-padding">
+        <section class="profile">
+            <div class="profile-info">
+                <h1 class="profile-title">Hola,  soy <br> Fernando Armira</h1>
+                <p class="profile-details">
+                    Soy un apasionado por la arquitectura y desarrollo de software, con
+                    experiencia en varios lenguajes de programación y
+                    tecnologías.
+                </p>
+                <button class="profile-btn">
+                    Descargar cv
+                </button>
+            </div>
+            <span class="profile-img-section">
+                <img class="profile-img" src="https://images.squarespace-cdn.com/content/v1/546d5382e4b05a4940d58d6f/1586810271092-G254ZQDXCV0L865MCEFX/In-Charge-72x60-WEB.jpg?format=2500w" alt="bear">
+                <div class="profile-img-line"></div>
+            </span>
+        </section>
+    </div>
+    
+    <div class="horizontal-padding vertical-padding">
+        <section class="skills">
+            <h2 class="skills-title">Habilidades</h2>
+            <ul class="skills-list">
+                <li class="skills-skill">CSS</li>
+                <li class="skills-skill">HTML</li>
+                <li class="skills-skill">Node.js</li>
+                <li class="skills-skill">React.js</li>
+                <li class="skills-skill">Typescript</li>
+                <li class="skills-skill">Javascript</li>
+            </ul>
+        </section>
+    </div>
+
 </body>
 </html>
