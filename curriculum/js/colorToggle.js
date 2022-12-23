@@ -5,14 +5,10 @@ lightModeBtn.addEventListener("click",setDarkMode);
 darkModeBtn.addEventListener("click",setLightMode);
 
 function setDarkMode(){
-    setUserTheme("dark");
+    __setUserTheme("dark");
 }
 
 function setLightMode(){
-    setUserTheme("light");
+    __setUserTheme("light");
 }
 
-function setUserTheme(newTheme){
-    document.documentElement.setAttribute("data-theme",newTheme);
-    localStorage.setItem("theme", newTheme)
-}
