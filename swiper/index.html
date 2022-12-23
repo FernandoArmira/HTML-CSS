@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiper demo</title>
+
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+
+    <style>
+
+        body{
+            margin: 0;
+        }
+
+        .swiper-hero {
+            width: 100%;
+        }
+
+        .swiper-hero img{
+            height: 255px;
+            width: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Slider main container -->
+<div class="swiper swiper-hero">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide">
+        <img
+          src="https://http2.mlstatic.com/D_NQ_939987-MLA50832730063_072022-OO.webp"
+          alt=""
+        />
+      </div>
+      <div class="swiper-slide">
+        <img
+          src="https://http2.mlstatic.com/D_NQ_817829-MLA50860384312_072022-OO.webp"
+          alt=""
+        />
+      </div>
+      <div class="swiper-slide">
+        <img
+          src="https://http2.mlstatic.com/D_NQ_955859-MLA50696530729_072022-OO.webp"
+          alt=""
+        />
+      </div>
+      <div class="swiper-slide">
+        <img
+          src="https://http2.mlstatic.com/D_NQ_999003-MLA50928299324_072022-OO.webp"
+          alt=""
+        />
+      </div>
+      <div class="swiper-slide">
+        <img
+          src="https://http2.mlstatic.com/D_NQ_954078-MLA50783791927_072022-OO.webp"
+          alt=""
+        />
+      </div>
+    
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+  <!-- If we need scrollbar -->
+  <!--<div class="swiper-scrollbar"></div>-->
+</div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script>
+        const swiper = new Swiper('.swiper-hero', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+            //allowTouchMove: true,
+            //effect: "fade",
+            //autoplay: true,
+            autoplay: {
+                delay: 10000,
+                pauseOnMouseEnter: true,
+                disableOnInteraction: false
+            },
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+                //type: 'progressbar'
+                clickable: true,
+                //dynamicBullets: true
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            /*scrollbar: {
+                el: '.swiper-scrollbar',
+                draggable: true,
+            },*/
+        });
+    </script>
+    
+</body>
+</html>
